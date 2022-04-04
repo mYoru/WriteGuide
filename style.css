@@ -1,0 +1,210 @@
+﻿/* Стиль тела */
+body {
+    margin: 0px;
+    background-color: #171717 !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Стиль бара */
+#navlogo {
+    overflow: hidden;
+    background-color: #171717;
+    padding: 10px 10px;
+    position: fixed;
+    z-index: 1;
+    }
+
+/* Стиль вкладок */
+#navlogo a {
+    float: left;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    }
+
+/* Стиль лого */
+#navlogo a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    }
+
+/* Изменения, когда мышь наводишь */
+#navlogo a:hover {
+    background-color: #719d61ff;
+    color: black;
+    }
+
+/* Стиль при активации вкладки */
+#navlogo a.active {
+    background-color: forestgreen;
+    color: black;
+    }
+
+/* Добавляет что то для @media, не шарю, че такое медиа, и не шарю, че делает */
+@media screen and (max-width: 500px) {
+    #navlogo a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #nav {
+        float: none;
+    }
+}
+
+/* Добавляет класс липкости в ДжС файл */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+/* Эта функция делает полезную вещь, чтобы ошибки не было, когда страницу листаешь */
+.sticky + .content {
+    padding-top: 100px;
+    }
+
+/* Картинка в самом начале */
+.aestethic {
+    position: relative; /* Позиция */
+    max-width: 100%; /* Макс.ширина */
+    margin: 0 auto; /* Центр здесь */
+    height: auto;
+}
+
+/* Текст на картинке */
+.text-block {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    font-size: 50px;
+    line-height: 10px;
+    background-color: #000000b3;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Стиль первого блок текста */
+.first-block {
+    position: absolute;
+    left: auto;
+    margin: 50px 10px 10px 10px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 40px;
+    background-color: #0000009b;
+    color: white;
+    border-radius: 50px;
+}
+
+/* Стиль второго блок текста */
+.second-block {
+    position: absolute;
+    top: 1000px;
+    left: auto;
+    margin: 10px 10px 10px 10px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #0000009b;
+    color: white;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+/* Стиль цитаты */
+.third-block {
+    position: absolute;
+    top: 1250px;
+    width: 1305px;
+    margin: 50px 0px 0px 0px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    background-color: #0000009b;
+    color: white;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.about {
+    position: absolute;
+    top: 520px;
+    left: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000000b2;
+    width: 70%;
+    border-radius: 20%;
+    line-height: 10px;
+}
+
+.title {
+
+    font-size: 30px;
+    color: #00acf7;
+
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+    background-color: #719d61ff;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* Make sure that padding behaves as expected */
+* {
+    box-sizing: border-box;
+}
+
+/* Container for skill bars */
+.container {
+    width: 70%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {
+    width: 90%;
+    background-color: #4CAF50;
+}
+/* Green */
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+/* Blue */
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+/* Red */
+.php {
+    width: 60%;
+    background-color: #808080;
+}
+/* Dark Grey */
