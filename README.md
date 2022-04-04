@@ -1,2 +1,0 @@
-# WriteGuide
-My Site
