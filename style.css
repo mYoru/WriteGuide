@@ -11,7 +11,7 @@ body {
     background-color: #171717;
     padding: 10px 10px;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     }
 
 /* Стиль вкладок */
@@ -175,22 +175,27 @@ body {
     box-sizing: border-box;
 }
 
-/* Container for skill bars */
+/* Контейнер с барами */
 .container {
-    width: 70%; /* Full width */
-    background-color: #ddd; /* Grey background */
+    width: 70%; /* Длина */
+    background-color: #0000009b; /* Фон */
+    position: absolute;
+    top: 800px;
+    
 }
 
 .skills {
     text-align: right; /* Right-align text */
     padding-right: 20px; /* Add some right padding */
     line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
-    color: white; /* White text color */
+    color: black; /* White text color */
+
 }
 
 .html {
     width: 90%;
     background-color: #4CAF50;
+
 }
 /* Green */
 .css {
@@ -207,4 +212,3 @@ body {
     width: 60%;
     background-color: #808080;
 }
-/* Dark Grey */
