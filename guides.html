@@ -5,13 +5,39 @@
     <meta charset="utf-8"/>
     <!-- CSS и JS -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="script.js"></script>
+    <script src="scriptguide.js"></script>
     <!-- Иконка сайта -->
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <!-- Титле -->
     <title>WriteGuide</title>
 </head>
 <body>
+
+    <!-- Навигация -->
+    <div id="navlogo">
+        <a href="index.html" class="logo">WriteGuide</a>
+        <div class="nav">
+            <a href="index.html">Главная</a>
+            <a href="guides.html">Гайды</a>
+            <a href="redactor.html">Редактор</a>
+            <a href="about.html">Обо мне</a>
+        </div>
+    </div>
+
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Поиск.." title="Введите категорию">
+
+    <ul id="myMenu">
+        <li><a href="#">Жизнь</a></li>
+        <li><a href="#">Устройства</a></li>
+        <li><a href="#">Еда</a></li>
+        <li><a href="#">Медицина</a></li>
+        <li><a href="#">Животные</a></li>
+        <li><a href="#">Наука</a></li>
+        <li><a href="#">Искусство</a></li>
+        <li><a href="#">Механика</a></li>
+        <li><a href="#">Игры</a></li>
+    </ul>
+
 
 </body>
 </html>

@@ -8,10 +8,11 @@ body {
 /* Стиль бара */
 #navlogo {
     overflow: hidden;
-    background-color: #171717;
+    background-color: #000000dd;
     padding: 10px 10px;
     position: fixed;
     z-index: 3;
+    width: 100%;
     }
 
 /* Стиль вкладок */
@@ -39,12 +40,6 @@ body {
     color: black;
     }
 
-/* Стиль при активации вкладки */
-#navlogo a.active {
-    background-color: forestgreen;
-    color: black;
-    }
-
 /* Добавляет что то для @media, не шарю, че такое медиа, и не шарю, че делает */
 @media screen and (max-width: 500px) {
     #navlogo a {
@@ -67,7 +62,7 @@ body {
 
 /* Эта функция делает полезную вещь, чтобы ошибки не было, когда страницу листаешь */
 .sticky + .content {
-    padding-top: 100px;
+    padding-top: 100%;
     }
 
 /* Картинка в самом начале */
@@ -124,7 +119,7 @@ body {
 .third-block {
     position: absolute;
     top: 1250px;
-    width: 1305px;
+    width: 100%;
     margin: 50px 0px 0px 0px;
     padding: 20px;
     padding-top: 0px;
@@ -137,9 +132,6 @@ body {
 }
 
 .about {
-    position: absolute;
-    top: 520px;
-    left: 200px;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -148,67 +140,103 @@ body {
     width: 70%;
     border-radius: 20%;
     line-height: 10px;
+    padding: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .title {
 
     font-size: 30px;
     color: #00acf7;
-
 }
 
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: black;
+.link {
+    font-size: 30px;
+    color: #00acf7;
+}
+
+.text {
+    font-size: 30px;
+    color: #00acf7;
     font-weight: bold;
-    background-color: #719d61ff;
-    text-align: center;
-    cursor: pointer;
-    width: 30%;
 }
 
-/* Make sure that padding behaves as expected */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
-/* Контейнер с барами */
-.container {
-    width: 70%; /* Длина */
-    background-color: #0000009b; /* Фон */
-    position: absolute;
-    top: 800px;
-    
+/* Коробка с умениями */
+.skill {
+    width: 70%;
+    background-color: #ddd; /* Фон */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
+
 
 .skills {
-    text-align: right; /* Right-align text */
-    padding-right: 20px; /* Add some right padding */
-    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
-    color: black; /* White text color */
+    padding-right: 20px;
+    line-height: 40px;
+    color: white; /* Цвет текста */
+    font-weight: bold;
 
 }
 
 .html {
-    width: 90%;
-    background-color: #4CAF50;
+    width: 50%;
+    background-color: #b52118;
+}
 
-}
-/* Green */
 .css {
-    width: 80%;
-    background-color: #2196F3;
+    width: 50%;
+    background-color: #196098;
 }
-/* Blue */
+
 .js {
-    width: 65%;
-    background-color: #f44336;
+    width: 25%;
+    background-color: #d3cf17;
 }
-/* Red */
+
 .php {
-    width: 60%;
-    background-color: #808080;
+    width: 10%;
+    background-color: #449c21;
 }
+
+.me {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Стиль окна поиска */
+#mySearch {
+    width: 20%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    margin-top: 100px;
+}
+
+/* Стиль меню навигации */
+#myMenu {
+    list-style-type: none;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+    /* Стиль навигационных ссылок */
+    #myMenu li a {
+        padding: 12px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        display: block
+    }
+
+        #myMenu li a:hover {
+            background-color: #719d61ff;
+        }
