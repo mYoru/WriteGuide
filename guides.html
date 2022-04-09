@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <!-- CSS и JS -->
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="scriptguide.js"></script>
+    <script src="script.js"></script>
     <!-- Иконка сайта -->
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <!-- Титле -->
@@ -24,20 +24,75 @@
         </div>
     </div>
 
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Поиск.." title="Введите категорию">
+    <div class="tab">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Поиск гайда..." title="Введите название гайда">
+        <button class="tablinks" onclick="openLink(event, 'Guide')">Руководство</button>
+        <button class="tablinks" onclick="openLink(event, 'Devices')">Устройства</button>
+        <button class="tablinks" onclick="openLink(event, 'Food')">Еда</button>
+        <button class="tablinks" onclick="openLink(event, 'Medicine')">Медицина</button>
+        <button class="tablinks" onclick="openLink(event, 'Animals')">Животные</button>
+        <button class="tablinks" onclick="openLink(event, 'Science')">Наука</button>
+        <button class="tablinks" onclick="openLink(event, 'Art')">Искусство</button>
+        <button class="tablinks" onclick="openLink(event, 'Mechanic')">Механика</button>
+        <button class="tablinks" onclick="openLink(event, 'Games')">Игры</button>
+    </div>
 
-    <ul id="myMenu">
-        <li><a href="#">Жизнь</a></li>
-        <li><a href="#">Устройства</a></li>
-        <li><a href="#">Еда</a></li>
-        <li><a href="#">Медицина</a></li>
-        <li><a href="#">Животные</a></li>
-        <li><a href="#">Наука</a></li>
-        <li><a href="#">Искусство</a></li>
-        <li><a href="#">Механика</a></li>
-        <li><a href="#">Игры</a></li>
-    </ul>
+    <div id="Guide" class="tabcontent">
+        <h3>Руководство по использованию</h3>
+        <p>
+            Добро пожаловать! Это основная функция сайта, находится в активной разработке,
+            суть такова:</p>
+        <p>
+            1. Введите в поиск опорное слово, к примеру: Вам нужно найти гайд "Как сварить
+            шикарные пельмешки", вы можете вводить слова "Как..." или "пельмешки". Вуаля!
+            Список сам вам выдаст этот гайд (Внимание! Функция находится в разработке, ибо разраб
+            ниче не умеет!)</p>
+        <p>
+            2. Вы можете мотать список гайдов вручную (Тоже еще в разработке, а еще это
+            бесполезная функция, так что пусть будет.)</p>
 
+        <p>3. Прочитайте гайд и радуйтесь.</p>
+    </div>
+
+    <div id="Devices" class="tabcontent">
+        <h3>Париж</h3>
+        <p>Париж является столицей Франции.</p>
+    </div>
+
+    <div id="Food" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
+
+    <div id="Medicine" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
+
+    <div id="Animals" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
+
+    <div id="Science" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
+
+    <div id="Art" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
+
+    <div id="Mechanic" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
+
+    <div id="Games" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div>
 
 </body>
 </html>

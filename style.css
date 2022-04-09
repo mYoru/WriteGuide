@@ -212,31 +212,58 @@ body {
 
 /* Стиль окна поиска */
 #mySearch {
-    width: 20%;
+    width: 100%;
     font-size: 18px;
     padding: 11px;
     border: 1px solid #ddd;
+}
+
+/* Стиль табуляции */
+.tab {
+    float: left;
+    border: 1px solid #719d61ff;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: auto;
     margin-top: 100px;
 }
 
-/* Стиль меню навигации */
-#myMenu {
-    list-style-type: none;
-    width: 20%;
-    padding: 0;
-    margin: 0;
-}
-
-    /* Стиль навигационных ссылок */
-    #myMenu li a {
-        padding: 12px;
-        text-decoration: none;
+    /* Стиль кнопок, которые используются для открытия содержимого вкладки */
+    .tab button {
+        display: block;
+        background-color: #171717;
         color: white;
-        font-size: 20px;
+        font-size: 13px;
         font-weight: bold;
-        display: block
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
     }
 
-        #myMenu li a:hover {
+        /* Изменение цвета фона кнопок при наведении курсора */
+        .tab button:hover {
+            background-color: #1d3e08;
+            color: white;
+        }
+
+        /* Создать активный текущий класс "вкладку кнопок" */
+        .tab button.active {
             background-color: #719d61ff;
         }
+
+/* Стиль содержимого вкладки */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #719d61ff;
+    width: 70%;
+    border-left: none;
+    height: auto;
+    color: white;
+    margin-top: 100px;
+
+}
