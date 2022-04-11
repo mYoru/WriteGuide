@@ -21,45 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
-function myFunction() {
-    // Объявлять переменные
-    var search, filter, link, li, a, i;
-    search = document.getElementById("mySearch");
-    filter = search.value.toUpperCase();
-    link = document.getElementById("tab");
-    li = link.getElementsByTagName("button");
+    function myFunction() {
+        // Объявлять переменные
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
 
-    // Выполните цикл по всем элементам списка и скройте те, которые не соответствуют запросу поиска
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("button")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
+        // Выполните цикл по всем элементам списка и скройте те, которые не соответствуют запросу поиска
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
         }
     }
-}
-
-function openLink(evt, linkName) {
-    // Объявить все переменные
-    var i, tabcontent, tablinks;
-
-    // Получить все элементы с помощью class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Получить все элементы с помощью class="tablinks" и удалить класс "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Показать текущую вкладку и добавить класс "active" по ссылке, открывшей вкладку
-    document.getElementById(linkName).style.display = "block";
-    evt.currentTarget.className += " active";
-
-    // Получите элемент с id="defaultOpen" и нажмите на него
-    document.getElementById("defaultOpen").click();
-}
