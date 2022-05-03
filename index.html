@@ -31,12 +31,24 @@
     <main>
 
         <!-- Приветствие -->
-        <div class="aestethic">
-            <img src="3.jpg" alt="Books" style="width:100%;">
-            <div class="text-block">
-                <h4>Добро пожаловать!</h4>
-                <p>Найди, прочти, или сам напиши.</p>
-            </div>
+        <div class="aloha">
+            <form action="/index.html">
+                <div class="text_log">
+                    <h4>Добро пожаловать!</h4>
+                    <p>Здесь должна быть мудрая цитата.</p>
+                </div>
+                <div class="container">
+                    <h1>Вход</h1>
+
+                    <label for="email"><b>Эл. почта</b></label>
+                    <input type="text" placeholder="Введите эл.почту" name="email" required>
+
+                    <label for="psw"><b>Пароль</b></label>
+                    <input type="password" placeholder="Пароль где?" name="psw" required>
+
+                    <button type="submit" class="btn">Войти</button>
+                </div>
+            </form>
         </div>
         <!-- Первый блок текста -->
         <div class="first-block">
@@ -71,7 +83,7 @@
 
 
     </main>
-
+    
 </body>
 
 </html>
