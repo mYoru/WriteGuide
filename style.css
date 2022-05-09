@@ -118,6 +118,7 @@ body {
     font-style: oblique;
 }
 
+/* Карточка */
 .about {
     color: white;
     font-size: 20px;
@@ -133,17 +134,20 @@ body {
     margin-right: auto
 }
 
+/* Отдельный текст в карточке */
 .title {
 
     font-size: 30px;
     color: #00acf7;
 }
 
+/* Ссылка в Сибирь */
 .link {
     font-size: 30px;
     color: #00acf7;
 }
 
+/* Умения */
 .text-skills {
     font-size: 30px;
     color: #00acf7;
@@ -157,7 +161,7 @@ body {
 /* Коробка с умениями */
 .skill {
     width: 70%;
-    background-color: #ddd; /* Фон */
+    background-color: #ddd;
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -167,7 +171,7 @@ body {
 .skills {
     padding-right: 20px;
     line-height: 40px;
-    color: white; /* Цвет текста */
+    color: white;
     font-weight: bold;
 
 }
@@ -229,10 +233,12 @@ body {
 
 }
 
+/* Стиль ссылок при наведении курсора */
 #myMenu li a:hover {
      background-color: #719d61ff;
 }
 
+/* Контент гайда */
 .text {
     display: block;
     text-decoration: none;
@@ -248,21 +254,7 @@ body {
     padding: 35px;
 }
 
-#redaction {
-
-    width: 15%;
-    font-size: 18px;
-    text-align: start;
-    vertical-align: text-top;
-    padding: 11px;
-    color: white;
-    border: 1px solid #ddd;
-    margin-top: 80px;
-    width: 100%;
-    height: 100px;
-    background-color: #171717;
-}
-
+/* Кнопки */
 .buttons {
     float: right;
     margin-top: 2%;
@@ -277,17 +269,16 @@ body, html {
     box-sizing: border-box;
 }
 
+/* Регистрация */
 .aloha {
-    /* The image used */
     background-image: url("3.jpg");
-    /* Control the height of the image */
     min-height: 800px;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* Ввод */
 .text_log {
     position: absolute;
     top: 300px;
@@ -301,7 +292,7 @@ body, html {
 }
 
 
-/* Add styles to the form container */
+/* Стиль регистрации */
 .container {
     position: absolute;
     right: 0;
@@ -315,7 +306,7 @@ body, html {
     background-color: #000000b3;
 }
 
-/* Full-width input fields */
+/* Полный размер чего-то */
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
@@ -329,7 +320,7 @@ input[type=text], input[type=password] {
         outline: none;
     }
 
-/* Set a style for the submit button */
+/* Стиль кнопки "Войти" */
 .btn {
     background-color: #4CAF50;
     color: white;
@@ -345,3 +336,9 @@ input[type=text], input[type=password] {
         opacity: 1;
     }
 
+.anytext-box {
+
+    color: white;
+
+
+}
